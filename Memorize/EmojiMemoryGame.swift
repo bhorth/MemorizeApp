@@ -15,7 +15,7 @@ class EmojiMemoryGame {
     private static let emojis = ["😀", "😇", "😍", "😎", "😜", "😟", "🥳", "🤢", "🤮", "🤥"]
     
     static func createMemoryGame() -> MemoryGame<String>{
-        return MemoryGame(numberOfPairOfCards: 9) { pairIndex in
+        return MemoryGame(numberOfPairOfCards: 10) { pairIndex in
             if emojis.indices.contains(pairIndex){
                 return emojis[pairIndex]
             }
